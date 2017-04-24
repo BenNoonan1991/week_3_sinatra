@@ -5,20 +5,14 @@ get '/' do
   "hello"
 end
 
-get '/secret' do
-  "This is a secret message"
-end
-
-get '/another' do
-  "This is another message"
-end
-
-get '/page' do
-  "Yet another page"
-end
-
-get '/cat' do
+get '/random-cat' do
   @names = ["Amigo","Oscar","Viking"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @names = params[:name]
   erb(:index)
 end
 
