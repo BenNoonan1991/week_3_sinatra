@@ -3,15 +3,3 @@
 <% end %>
 
 <div style='border:3px dashed red' ><img src='http://bit.ly/1eze8aE'></div>
-
-<% if @names.nil? %>
-<form action="/named-cat">
-  <div>
-    <label for "name">Name:</label>
-    <input type="text" name="name">
-  </div>
-  <div>
-    <input type="submit" value="Submit">
-  </div>
-</form>
-<% end %>
