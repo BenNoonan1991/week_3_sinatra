@@ -6,7 +6,7 @@ get '/' do
 end
 
 get '/secret' do
-  "This is my secret message"
+  "This is a secret message"
 end
 
 get '/another' do
@@ -18,7 +18,7 @@ get '/page' do
 end
 
 get '/cat' do
-  "<div style='border:3px dashed red' ><img src='http://bit.ly/1eze8aE'></div>"
+  erb(:index)
 end
 
 set :session_secret, 'super secret'
